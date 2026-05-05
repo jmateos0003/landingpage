@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="/favicon.png">
+<meta property="og:title" content="Ayuda Kudeabide 2026 | IberiKonsulting">
+<meta property="og:description" content="Te ayudamos a solicitar y gestionar Kudeabide para mejorar la gestión avanzada de tu empresa en Bizkaia.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80&auto=format&fit=crop">
+<meta property="og:url" content="https://iberikonsulting.com/ayudas-bizkaia/kudeabide.html">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<title>Ayuda Kudeabide 2026 — IberiKonsulting</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --white: #F7F3F0;
+    --sand-light: #F7F3F0;
+    --sand: #C5BA8D;
+    --stone: #6B7D7A;
+    --forest: #111111;
+    --accent: #AECCC4;
+    --accent-dark: #8FAEA7;
+    --dark-panel: #1A211F;
+    --line: rgba(197,186,141,0.22);
+    --shadow: 0 24px 60px rgba(17,17,17,0.18);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; font-size: 16px; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--white); color: var(--forest); overflow-x: hidden; }
+  h1, h2, h3, h4 { font-family: 'Uncage', 'DM Sans', sans-serif; letter-spacing: -0.03em; }
+  a { color: inherit; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 999;
+    background: rgba(17,17,17,0.96); backdrop-filter: blur(10px);
+    display: flex; align-items: center; justify-content: space-between;
+    height: 68px; padding: 0 5%; border-bottom: 1px solid var(--line);
+  }
+  .nav-logo { font-family: 'Uncage', 'DM Sans', sans-serif; font-size: 1.35rem; font-weight: 700; color: var(--sand-light); text-decoration: none; letter-spacing: 0.02em; }
+  .nav-logo span { color: var(--sand); font-weight: 300; letter-spacing: 0.1em; }
+  .nav-links { display: flex; gap: 1.6rem; align-items: center; list-style: none; }
+  .nav-links a { color: var(--sand-light); text-decoration: none; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.85; }
+  .nav-links a:hover { opacity: 1; }
+  .nav-cta { background: var(--accent); color: #111 !important; padding: 0.68rem 1.2rem; border-radius: 3px; font-weight: 700; opacity: 1 !important; }
+  .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: 0; cursor: pointer; }
+  .hamburger span { width: 24px; height: 2px; display: block; background: var(--sand-light); }
+
+  .btn-primary, .btn-secondary, .form-submit {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 1rem 1.45rem; border-radius: 3px; font: 700 0.95rem 'DM Sans', sans-serif;
+    text-decoration: none; cursor: pointer; transition: transform .15s, background .2s, border-color .2s;
+  }
+  .btn-primary, .form-submit { background: var(--accent); color: #111; border: 0; }
+  .btn-primary:hover, .form-submit:hover { background: var(--accent-dark); transform: translateY(-1px); }
+  .btn-secondary { color: var(--sand-light); border: 1px solid rgba(247,243,240,.35); background: transparent; }
+  .btn-secondary:hover { border-color: var(--sand); }
+
+  .hero {
+    min-height: 100vh; padding: 112px 5% 58px; position: relative; overflow: hidden;
+    background: var(--forest); display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(360px, .62fr); gap: 4rem; align-items: center;
+  }
+  .hero::before { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(17,17,17,.98) 0%, rgba(17,17,17,.88) 45%, rgba(17,17,17,.55) 100%), url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1800&q=80&auto=format&fit=crop') center/cover; opacity: 1; }
+  .hero::after { content: ''; position: absolute; inset: 0; pointer-events: none; background-image: linear-gradient(rgba(197,186,141,0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(197,186,141,0.045) 1px, transparent 1px); background-size: 80px 80px; }
+  .hero-content, .hero-form-card { position: relative; z-index: 2; }
+  .breadcrumb { color: rgba(247,243,240,.6); font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 1.5rem; }
+  .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(197,186,141,.12); border: 1px solid rgba(197,186,141,.28); color: var(--sand); font-size: .76rem; letter-spacing: .11em; text-transform: uppercase; padding: 7px 14px; border-radius: 2px; margin-bottom: 1.6rem; }
+  .hero-badge::before { content: ''; width: 7px; height: 7px; border-radius: 999px; background: var(--accent); box-shadow: 0 0 0 6px rgba(174,204,196,.11); }
+  .hero h1 { font-size: clamp(2.45rem, 5.8vw, 5.15rem); color: var(--white); line-height: 1.02; margin-bottom: 1.35rem; max-width: 880px; }
+  .hero h1 em { color: var(--sand); font-style: normal; }
+  .hero-subtitle { color: rgba(247,243,240,.78); font-size: clamp(1rem, 1.6vw, 1.22rem); line-height: 1.72; max-width: 690px; margin-bottom: 2rem; font-weight: 300; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; margin-bottom: 2rem; }
+  .micro-proof { display: flex; flex-wrap: wrap; gap: .75rem; }
+  .proof-pill { border: 1px solid rgba(197,186,141,.22); background: rgba(247,243,240,.06); color: rgba(247,243,240,.82); padding: .58rem .8rem; border-radius: 999px; font-size: .82rem; }
+  .proof-pill strong { color: var(--sand); }
+
+  .hero-form-card { background: rgba(247,243,240,.97); border: 1px solid rgba(197,186,141,.55); box-shadow: var(--shadow); padding: 1.6rem; border-radius: 8px; }
+  .form-kicker { color: var(--stone); font-size: .75rem; text-transform: uppercase; letter-spacing: .12em; margin-bottom: .45rem; font-weight: 700; }
+  .hero-form-card h3 { font-size: 1.45rem; line-height: 1.15; margin-bottom: .65rem; color: var(--forest); }
+  .hero-form-card p { color: #4b5653; line-height: 1.55; font-size: .92rem; margin-bottom: 1.05rem; }
+  .field-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; }
+  .form-group { margin-bottom: .8rem; }
+  label { display: block; font-size: .74rem; text-transform: uppercase; letter-spacing: .08em; font-weight: 700; color: #45504d; margin-bottom: .35rem; }
+  input, select, textarea { width: 100%; border: 1px solid rgba(17,17,17,.12); background: #fff; border-radius: 3px; padding: .84rem .88rem; font: 400 .95rem 'DM Sans', sans-serif; color: var(--forest); outline: none; }
+  input:focus, select:focus, textarea:focus { border-color: var(--accent-dark); box-shadow: 0 0 0 3px rgba(174,204,196,.35); }
+  textarea { min-height: 88px; resize: vertical; }
+  .form-submit { width: 100%; margin-top: .25rem; padding: 1.05rem 1.2rem; }
+  .privacy-note { font-size: .72rem !important; color: #68726f !important; margin: .75rem 0 0 !important; }
+  .success-message { display: none; background: #dff5ec; color: #1f3d33; padding: 14px; border-radius: 4px; margin-bottom: 1rem; font-size: .9rem; line-height: 1.4; }
+
+  section { padding: 88px 5%; position: relative; }
+  .section-tag { color: var(--stone); text-transform: uppercase; letter-spacing: .12em; font-size: .78rem; font-weight: 700; margin-bottom: .75rem; }
+  .section-title { font-size: clamp(2rem, 4vw, 3.7rem); line-height: 1.08; margin-bottom: 1rem; color: var(--forest); }
+  .section-title em { color: var(--sand); font-style: normal; }
+  .section-lead { color: var(--stone); max-width: 680px; line-height: 1.7; font-size: 1.05rem; }
+
+  .problem-grid, .benefit-grid, .steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2.2rem; }
+  .card { background: #fff; border: 1px solid rgba(17,17,17,.08); padding: 1.45rem; border-radius: 6px; box-shadow: 0 14px 36px rgba(17,17,17,.06); }
+  .card-number { color: var(--sand); font-size: .78rem; letter-spacing: .12em; font-weight: 800; margin-bottom: .7rem; }
+  .card h3, .card h4 { font-size: 1.15rem; line-height: 1.2; margin-bottom: .65rem; }
+  .card p { color: var(--stone); line-height: 1.62; font-size: .94rem; }
+
+  .dark-section { background: var(--forest); color: var(--white); overflow: hidden; }
+  .dark-section::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 10% 20%, rgba(174,204,196,.12), transparent 35%), radial-gradient(circle at 85% 70%, rgba(197,186,141,.10), transparent 40%); pointer-events: none; }
+  .dark-section > * { position: relative; z-index: 1; }
+  .dark-section .section-title { color: var(--white); }
+  .dark-section .section-lead, .dark-section .card p { color: rgba(247,243,240,.72); }
+  .dark-section .card { background: rgba(247,243,240,.055); border-color: rgba(197,186,141,.2); box-shadow: none; }
+  .dark-section .card h3, .dark-section .card h4 { color: var(--white); }
+
+  .eligibility { display: grid; grid-template-columns: .85fr 1.15fr; gap: 2rem; align-items: stretch; margin-top: 2.2rem; }
+  .eligibility-panel { background: #fff; border: 1px solid rgba(17,17,17,.08); padding: 1.7rem; border-radius: 8px; box-shadow: 0 16px 40px rgba(17,17,17,.07); }
+  .big-stat { font-size: clamp(3.2rem, 8vw, 5.8rem); font-family: 'Uncage', 'DM Sans', sans-serif; line-height: .9; color: var(--forest); }
+  .big-stat span { color: var(--sand); }
+  .check-list { display: grid; gap: .85rem; }
+  .check-item { display: grid; grid-template-columns: 28px 1fr; gap: .8rem; align-items: start; padding: 1rem; border: 1px solid rgba(17,17,17,.08); background: rgba(255,255,255,.65); border-radius: 6px; }
+  .check-icon { width: 28px; height: 28px; border-radius: 999px; background: var(--accent); display: flex; align-items: center; justify-content: center; font-weight: 800; }
+  .check-item strong { display: block; margin-bottom: .2rem; }
+  .check-item span { color: var(--stone); line-height: 1.5; font-size: .93rem; }
+
+  .conversion-band { padding: 0 5%; background: linear-gradient(90deg, var(--accent), var(--sand)); }
+  .conversion-inner { max-width: 1220px; margin: 0 auto; display: grid; grid-template-columns: 1.1fr auto; gap: 1.5rem; align-items: center; padding: 1.2rem 0; }
+  .conversion-inner strong { display: block; font-size: 1.05rem; }
+  .conversion-inner span { color: rgba(17,17,17,.68); line-height: 1.45; }
+  .conversion-inner .btn-primary { background: #111; color: var(--white); white-space: nowrap; }
+
+  .process-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-top: 2.3rem; }
+  .step { padding: 1.4rem; border-left: 1px solid rgba(197,186,141,.35); background: rgba(247,243,240,.04); }
+  .step span { color: var(--accent); font-size: .78rem; text-transform: uppercase; letter-spacing: .11em; font-weight: 800; }
+  .step h4 { color: var(--white); margin: .65rem 0; font-size: 1.05rem; }
+  .step p { color: rgba(247,243,240,.68); line-height: 1.55; font-size: .92rem; }
+
+  .final-cta { background: var(--forest); color: var(--white); padding: 92px 5%; text-align: center; overflow: hidden; }
+  .final-cta h2 { color: var(--white); font-size: clamp(2.15rem, 5vw, 4rem); line-height: 1.05; max-width: 900px; margin: 0 auto 1rem; }
+  .final-cta p { color: rgba(247,243,240,.72); max-width: 660px; margin: 0 auto 1.8rem; line-height: 1.65; }
+
+  footer { background: #0b0b0b; color: rgba(247,243,240,.64); padding: 38px 5%; font-size: .86rem; }
+  .footer-row { display: flex; justify-content: space-between; gap: 1rem; align-items: center; flex-wrap: wrap; }
+  .footer-logo { font-family: 'Uncage', 'DM Sans', sans-serif; color: var(--white); text-decoration: none; font-size: 1.1rem; }
+  .footer-logo span { color: var(--sand); font-weight: 300; letter-spacing: .1em; }
+
+  .sticky-mobile { display: none; position: fixed; left: 0; right: 0; bottom: 0; z-index: 998; background: rgba(17,17,17,.96); padding: .7rem; border-top: 1px solid rgba(197,186,141,.25); }
+  .sticky-mobile .btn-primary { width: 100%; }
+
+  @media (max-width: 980px) {
+    .nav-links { position: fixed; top: 68px; left: 0; right: 0; flex-direction: column; align-items: flex-start; padding: 1.4rem 5%; background: rgba(17,17,17,.98); transform: translateY(-130%); transition: transform .25s; border-bottom: 1px solid var(--line); }
+    .nav-links.active { transform: translateY(0); }
+    .hamburger { display: flex; }
+    .hero { grid-template-columns: 1fr; padding-top: 104px; gap: 2rem; }
+    .hero-form-card { max-width: 640px; }
+    .problem-grid, .benefit-grid, .steps-grid, .process-row { grid-template-columns: 1fr 1fr; }
+    .eligibility { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 640px) {
+    body { padding-bottom: 76px; }
+    nav { height: 64px; }
+    .nav-logo { font-size: 1.05rem; }
+    .hero { min-height: auto; padding: 96px 5% 48px; }
+    .hero h1 { font-size: 2.45rem; }
+    .hero-actions .btn-primary, .hero-actions .btn-secondary { width: 100%; }
+    .field-grid, .problem-grid, .benefit-grid, .steps-grid, .process-row, .conversion-inner { grid-template-columns: 1fr; }
+    section { padding: 64px 5%; }
+    .hero-form-card { padding: 1.15rem; }
+    .conversion-inner .btn-primary { width: 100%; }
+    .sticky-mobile { display: block; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">IBERIK<span>ONSULTING</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="/#servicios">Servicios</a></li>
+    <li><a href="/#ayudas">Ayudas Bizkaia</a></li>
+    <li><a href="#requisitos">Requisitos</a></li>
+    <li><a href="#proceso">Proceso</a></li>
+    <li><a href="#contacto" class="nav-cta">Comprobar si puedo acceder</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+</nav>
+
+<main>
+  <header class="hero" id="inicio">
+    <div class="hero-content">
+      <div class="breadcrumb">Inicio / Ayudas Bizkaia / Kudeabide</div>
+      <div class="hero-badge">Kudeabide 2026 · Gestión avanzada para empresas vascas</div>
+      <h1>Consigue la ayuda Kudeabide y mejora la gestión de tu empresa <em>sin perderte en la tramitación.</em></h1>
+      <p class="hero-subtitle">En IberiKonsulting analizamos si tu empresa encaja, preparamos la solicitud y te acompañamos en el proyecto para que puedas acceder a la ayuda con un planteamiento claro, defendible y orientado a resultados.</p>
+      <div class="hero-actions">
+        <a href="#contacto" class="btn-primary">Quiero comprobar si puedo acceder →</a>
+        <a href="#requisitos" class="btn-secondary">Ver requisitos principales</a>
+      </div>
+      <div class="micro-proof">
+        <div class="proof-pill"><strong>Empresas de Bizkaia</strong> con potencial de mejora</div>
+        <div class="proof-pill"><strong>Gestión avanzada</strong> y competitividad</div>
+        <div class="proof-pill"><strong>Diagnóstico inicial</strong> sin compromiso</div>
+      </div>
+    </div>
+
+    <aside class="hero-form-card" id="contacto">
+      <div id="mensaje-enviado" class="success-message">✅ Hemos recibido tu solicitud. Revisaremos tu caso y te contactaremos en menos de 24h laborables.</div>
+      <div class="form-kicker">Diagnóstico gratuito</div>
+      <h3>Comprueba si tu empresa puede solicitar Kudeabide</h3>
+      <p>Déjanos tus datos y revisamos tu caso: tamaño de empresa, sector, ubicación y posible encaje del proyecto.</p>
+
+      <form class="contact-form" action="https://formsubmit.co/info@iberikonsulting.com" method="POST">
+        <input type="hidden" name="_subject" value="Nuevo lead Kudeabide desde landing IberiKonsulting">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://iberikonsulting.com/ayudas-bizkaia/kudeabide.html?enviado=1#contacto">
+        <input type="hidden" name="Origen" value="Landing Kudeabide 2026">
+
+        <div class="field-grid">
+          <div class="form-group">
+            <label>Nombre</label>
+            <input type="text" name="Nombre" placeholder="Tu nombre" required>
+          </div>
+          <div class="form-group">
+            <label>Empresa</label>
+            <input type="text" name="Empresa" placeholder="Nombre de empresa" required>
+          </div>
+        </div>
+        <div class="field-grid">
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="Email" placeholder="tu@empresa.com" required>
+          </div>
+          <div class="form-group">
+            <label>Teléfono</label>
+            <input type="tel" name="Teléfono" placeholder="696 81 35 25" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Número aproximado de empleados</label>
+          <select name="Empleados" required>
+            <option value="">Selecciona una opción...</option>
+            <option>Menos de 5 empleados</option>
+            <option>Entre 5 y 49 empleados</option>
+            <option>50 o más empleados</option>
+            <option>No lo sé / prefiero que lo revisemos</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>¿Qué quieres mejorar?</label>
+          <select name="Área de mejora" required>
+            <option value="">Selecciona una opción...</option>
+            <option>Gestión comercial y captación de clientes</option>
+            <option>Marketing, publicidad y ventas</option>
+            <option>Procesos internos y automatización</option>
+            <option>Digitalización y herramientas de gestión</option>
+            <option>Organización, estrategia o cuadro de mando</option>
+            <option>No lo tengo claro todavía</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Cuéntanos brevemente tu caso</label>
+          <textarea name="Mensaje" placeholder="Ej: somos una pyme de Bizkaia y queremos mejorar la captación de clientes / procesos / gestión comercial..."></textarea>
+        </div>
+        <button class="form-submit" type="submit"><span>Solicitar revisión gratuita</span><span>→</span></button>
+        <p class="privacy-note">Sin compromiso. Te contactamos para confirmar si tiene sentido avanzar antes de preparar nada.</p>
+      </form>
+    </aside>
+  </header>
+
+  <section id="problema">
+    <div class="section-tag">La oportunidad</div>
+    <h2 class="section-title">Una ayuda interesante.<br><em>Una tramitación que conviene hacer bien.</em></h2>
+    <p class="section-lead">Kudeabide está pensada para impulsar la competitividad de las empresas vascas mediante proyectos de mejora en la gestión. El problema es que muchas empresas no la solicitan porque no saben si encajan, qué proyecto presentar o cómo justificarlo.</p>
+
+    <div class="problem-grid">
+      <article class="card">
+        <div class="card-number">01</div>
+        <h3>No sabes si puedes acceder</h3>
+        <p>Revisamos el encaje de tu empresa según tamaño, sector, ubicación y tipo de proyecto antes de hacerte perder tiempo.</p>
+      </article>
+      <article class="card">
+        <div class="card-number">02</div>
+        <h3>No tienes claro qué proyecto presentar</h3>
+        <p>Convertimos tus necesidades reales —ventas, procesos, marketing, gestión o digitalización— en una propuesta coherente.</p>
+      </article>
+      <article class="card">
+        <div class="card-number">03</div>
+        <h3>No quieres gestionar papeleo</h3>
+        <p>Te acompañamos en la solicitud, documentación, seguimiento y enfoque del proyecto para que el proceso sea mucho más sencillo.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="dark-section" id="que-es">
+    <div class="section-tag" style="color:var(--accent);">Qué es Kudeabide</div>
+    <h2 class="section-title">Subvenciones para avanzar hacia una empresa <em>más competitiva y mejor gestionada.</em></h2>
+    <p class="section-lead">El programa Innobideak-Kudeabide es una colaboración entre Gobierno Vasco-SPRI, Euskalit y las Diputaciones Forales. Su objetivo es impulsar proyectos de mejora de la gestión siguiendo el Modelo Vasco de Gestión Avanzada.</p>
+
+    <div class="benefit-grid">
+      <article class="card">
+        <div class="card-number">Mejora comercial</div>
+        <h3>Captación, ventas y marketing</h3>
+        <p>Ideal si quieres ordenar tu estrategia comercial, mejorar la conversión, profesionalizar campañas o medir mejor tus resultados.</p>
+      </article>
+      <article class="card">
+        <div class="card-number">Gestión interna</div>
+        <h3>Procesos y eficiencia</h3>
+        <p>Para empresas que quieren reducir trabajo manual, implantar herramientas, automatizar tareas o mejorar su toma de decisiones.</p>
+      </article>
+      <article class="card">
+        <div class="card-number">Competitividad</div>
+        <h3>Plan de mejora accionable</h3>
+        <p>No se trata de pedir una ayuda “porque sí”, sino de diseñar un proyecto útil que tenga impacto real en el negocio.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="requisitos">
+    <div class="section-tag">Encaje principal</div>
+    <h2 class="section-title">¿Quién puede solicitarla?</h2>
+    <p class="section-lead">La ayuda está dirigida a empresas con personalidad jurídica propia de sectores industriales, servicios técnicos ligados a la producción o del ámbito TIC. En función del tamaño, la gestión de la ayuda cambia.</p>
+
+    <div class="eligibility">
+      <div class="eligibility-panel">
+        <div class="big-stat">5<span>–</span>49</div>
+        <h3 style="margin:1rem 0 .6rem; font-size:1.45rem;">empleados</h3>
+        <p style="color:var(--stone); line-height:1.65;">Si tu empresa tiene entre 5 y 49 empleados, la gestión de estas ayudas recae en las Diputaciones Forales de Álava, Bizkaia y Gipuzkoa. Para empresas con 50 o más empleados, la convocatoria se gestiona a través de SPRI.</p>
+      </div>
+      <div class="check-list">
+        <div class="check-item"><div class="check-icon">✓</div><div><strong>Empresa con personalidad jurídica propia</strong><span>No está orientada a autónomos sin sociedad ni a proyectos personales.</span></div></div>
+        <div class="check-item"><div class="check-icon">✓</div><div><strong>Actividad industrial, técnica o TIC</strong><span>Especialmente relevante para empresas que quieren profesionalizar su gestión, procesos o estrategia comercial.</span></div></div>
+        <div class="check-item"><div class="check-icon">✓</div><div><strong>Proyecto de mejora de gestión</strong><span>Debe existir una necesidad real: gestión comercial, procesos, herramientas, cuadros de mando, marketing o eficiencia.</span></div></div>
+        <div class="check-item"><div class="check-icon">✓</div><div><strong>Ubicación y convocatoria adecuada</strong><span>Revisamos si corresponde vía Diputación Foral o SPRI según tamaño y territorio.</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="conversion-band">
+    <div class="conversion-inner">
+      <div>
+        <strong>¿No sabes si tu empresa encaja?</strong>
+        <span>Te lo revisamos antes de empezar. Sin compromiso y sin hacerte perder tiempo.</span>
+      </div>
+      <a href="#contacto" class="btn-primary">Revisar mi caso →</a>
+    </div>
+  </div>
+
+  <section class="dark-section" id="proceso">
+    <div class="section-tag" style="color:var(--accent);">Cómo lo hacemos</div>
+    <h2 class="section-title">Nosotros convertimos la ayuda en un proyecto claro.</h2>
+    <p class="section-lead">Nuestro enfoque es práctico: primero vemos si tienes opciones reales, después definimos un proyecto que encaje con tus necesidades de negocio y, si tiene sentido, te acompañamos durante el proceso.</p>
+
+    <div class="process-row">
+      <div class="step"><span>Paso 01</span><h4>Diagnóstico express</h4><p>Analizamos empresa, sector, empleados y necesidad de mejora para validar el encaje inicial.</p></div>
+      <div class="step"><span>Paso 02</span><h4>Idea de proyecto</h4><p>Definimos una propuesta útil: captación, gestión comercial, automatización, procesos o medición.</p></div>
+      <div class="step"><span>Paso 03</span><h4>Solicitud y documentación</h4><p>Te ayudamos a ordenar la información necesaria y a presentar el proyecto con criterio.</p></div>
+      <div class="step"><span>Paso 04</span><h4>Ejecución y seguimiento</h4><p>Te acompañamos en la implantación y dejamos trazabilidad para facilitar la justificación.</p></div>
+    </div>
+  </section>
+
+  <section id="por-que">
+    <div class="section-tag">Por qué IberiKonsulting</div>
+    <h2 class="section-title">No somos solo tramitadores.<br><em>Somos consultores de crecimiento.</em></h2>
+    <p class="section-lead">La ayuda es el medio. El objetivo es que tu empresa salga con un sistema mejor: más control, más eficiencia y más capacidad para captar clientes.</p>
+
+    <div class="steps-grid">
+      <article class="card"><div class="card-number">Marketing & ventas</div><h3>Proyectos con impacto comercial</h3><p>Podemos orientar Kudeabide hacia captación de leads, estrategia digital, embudos comerciales y sistemas de medición.</p></article>
+      <article class="card"><div class="card-number">IA & automatización</div><h3>Menos trabajo manual</h3><p>Detectamos tareas repetitivas, procesos lentos y oportunidades de automatización para mejorar la eficiencia interna.</p></article>
+      <article class="card"><div class="card-number">Gestión completa</div><h3>Acompañamiento de principio a fin</h3><p>Desde la primera revisión hasta el planteamiento del proyecto, la ejecución y el seguimiento posterior.</p></article>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <h2>Antes de dejar pasar la convocatoria, comprueba si tu empresa puede aprovechar Kudeabide.</h2>
+    <p>Rellena el formulario y te diremos si vemos encaje, qué tipo de proyecto podrías presentar y cuál sería el siguiente paso más inteligente.</p>
+    <a href="#contacto" class="btn-primary">Solicitar revisión gratuita →</a>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-row">
+    <a href="/" class="footer-logo">IBERIK<span>ONSULTING</span></a>
+    <p>Agencia de Marketing & Consultoría de IA en Bilbao · Ayudas Bizkaia</p>
+  </div>
+</footer>
+
+<div class="sticky-mobile">
+  <a href="#contacto" class="btn-primary">Comprobar si puedo acceder →</a>
+</div>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  hamburger?.addEventListener('click', () => navLinks.classList.toggle('active'));
+  document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('active')));
+
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('enviado') === '1') {
+    const message = document.getElementById('mensaje-enviado');
+    const form = document.querySelector('.contact-form');
+    if (message) message.style.display = 'block';
+    if (form) form.style.display = 'none';
+  }
+</script>
+</body>
+</html>
